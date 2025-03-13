@@ -6,3 +6,7 @@
 //     duration: 1000,
 //     offset: 100,
 // });
+
+const catalog = document.querySelector('popular-foods__catalog')
+
+catalog.innerText=`<h1>The Catalog Appears here</>`
