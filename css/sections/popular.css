@@ -196,3 +196,7 @@
     font-size: 24px;
     color: var(--secondary-color);
 }
+
+.popular-foods__card:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
