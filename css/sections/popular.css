@@ -200,3 +200,7 @@
 .popular-foods__card:hover {
     background: rgba(255, 255, 255, 0.2);
 }
+
+/* .popular-foods__card-image:hover {
+    background-color: transparent;
+} */
