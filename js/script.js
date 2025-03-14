@@ -23,21 +23,21 @@ const trendingSushis = [
 
 const cards = [
     {
-        imgSrc: "sushi-12",
+        imgSrc: sushi12,
         alt: 'Sushi 12',
         title: 'Chezu Sushi',
         rating: 4.8,
         price:"$21.00",
     },
     {
-        imgSrc: "sushi-11",
+        imgSrc: sushi11,
         alt: 'Sushi 11',
         title: 'Originale Sushi',
         rating: 4.5,
         price:"$19.00",
     },
     {
-        imgSrc: "sushi-10",
+        imgSrc: sushi10,
         alt: 'Sushi 10',
         title: 'Ramen Legendo',
         rating: 4.1,
@@ -50,7 +50,7 @@ const cards = [
 // popular.innerHTML = cards.map((card) => {
 //     return `
 //     <article class="${card.alt === 'Sushi 11' ? 'popular-foods__card active-card' : 'popular-foods__card'}">
-//           <img class="popular-foods__card-image" src="assets/${card.imgSrc}.png" alt=${card.alt}>
+//           <img class="popular-foods__card-image" src=${card.imgSrc} alt=${card.alt}>
 
 //           <h4 class="popular-foods__card-title">${card.title}</h4>
 
