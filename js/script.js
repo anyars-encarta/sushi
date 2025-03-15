@@ -21,6 +21,15 @@ const trendingSushis = [
   "Inari Sushi",
 ];
 
+const trendingDrinks = [
+  "Oruncha",
+  "Sakura Tea",
+  "Aojiru",
+  "Ofukucha",
+  "Kombu-cha",
+  "Mugicha",
+];
+
 const cards = [
   {
     imgSrc: sushi12,
@@ -45,37 +54,55 @@ const cards = [
   },
 ];
 
-// const popular = document.querySelector('.popular-foods__catalog');
-const trending = document.querySelector(".trending__list");
+const popular = document.querySelector(".popular-foods__catalog");
+const trendingFood = document.querySelector(".trending__list");
+const trendingDrink = document.querySelector("#drink");
 
-// popular.innerHTML = cards.map((card) => {
-//     return `
-//     <article class="${card.alt === 'Sushi 11' ? 'popular-foods__card active-card' : 'popular-foods__card'}">
-//           <img class="popular-foods__card-image" src=${card.imgSrc} alt=${card.alt}>
+popular.innerHTML = cards.map((card) => {
+  return `
+    <article class="${
+      card.alt === "Sushi 11"
+        ? "popular-foods__card active-card"
+        : "popular-foods__card"
+    }">
+          <img class="popular-foods__card-image" src=${card.imgSrc} alt=${
+    card.alt
+  }>
 
-//           <h4 class="popular-foods__card-title">${card.title}</h4>
+          <h4 class="popular-foods__card-title">${card.title}</h4>
 
-//           <div class="popular-foods__card-details flex-between">
-//             <div class="popular-foods__card-rating">
-//               <img src=${star} alt="star">
+          <div class="popular-foods__card-details flex-between">
+            <div class="popular-foods__card-rating">
+              <img src=${star} alt="star">
 
-//               <p>${card.rating}</p>
-//             </div>
+              <p>${card.rating}</p>
+            </div>
 
-//             <p class="popular-foods__card-price">${card.price}</p>
-//           </div>
-//         </article>
-//     `;
-// });
+            <p class="popular-foods__card-price">${card.price}</p>
+          </div>
+        </article>
+    `;
+});
 
-// trending.innerHTML = trendingSushis.map((sushi) => {
-//   return `
-//     <li>
-//         <div class="trending__icon flex-center">
-//             <img src=${check} alt="check" />
-//         </div>
+trendingFood.innerHTML = trendingSushis.map((sushi) => {
+  return `
+    <li>
+      <div class="trending__icon flex-center">
+        <img src=${check} alt="check" />
+      </div>
 
-//         <p>${sushi}</p>
-//     </li>
-//     `;
-// });
+      <p>${sushi}</p>
+    </li>
+    `;
+});
+
+trendingDrink.innerHTML = trendingDrinks.map((drink) => {
+  return `
+    <li>
+      <div class="trending__icon flex-center">
+        <img src=${check} alt="check" />
+      </div>
+      <p>${drink}</p>
+    </li>
+    `;
+});
