@@ -1,2 +1,2 @@
 # Sushi
-This is a Sushi website
+This is a Sushi website created with Vite
